@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {EmailService} from './email.service';
+import construct = Reflect.construct;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'udemy1';
+
+  task = {
+    title: 'Review applications',
+    assignee: null
+  }
+
+  constructor() {
+  }
+
+
 }
